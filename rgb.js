@@ -3,11 +3,11 @@ div1 = document.getElementById('div1');
 div2 = document.getElementById('div2');
 
 btnStop.addEventListener('click',function () {    
-    if(div1.style.backgroundColor==div2.style.backgroundColor){
+    if(getComputedStyle(div1).backgroundColor==getComputedStyle(div2).backgroundColor){
         alert('You Win! The colors match.');
 
     }
-    if(div1.style.backgroundColor!=div2.style.backgroundColor){
+    if(getComputedStyle(div1).backgroundColor!=getComputedStyle(div2).backgroundColor){
         alert('You Lose! The colors do not match.');
         
     }
